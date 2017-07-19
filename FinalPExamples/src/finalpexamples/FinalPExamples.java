@@ -32,11 +32,14 @@ public class FinalPExamples {
         
         Scanner keyboard = new Scanner(System.in);
         
-        // 'a' is 20
+        // 'a' is 20, but I didn't instantiated it
         int b = keyboard.nextInt();
-        System.out.println("Before the calculation, a is " + StaticNonStaticVariables.a);
+        System.out.println("Before the calculation, a is " + 
+                StaticNonStaticVariables.a);
+        // 'a' is the result of the multiplication
         int result = StaticNonStaticVariables.howToReference(b);
-        System.out.println("After the calculation, a is " + StaticNonStaticVariables.a);
+        System.out.println("After the calculation, a is " + 
+                StaticNonStaticVariables.a);
         
         
         /*Arrays, ArrayList, Enum

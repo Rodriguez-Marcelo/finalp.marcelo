@@ -5,7 +5,7 @@
  */
 package finalpexamples;
 
-/**
+/*
  *
  * @author Chicho
  */
@@ -13,9 +13,6 @@ public class StaticNonStaticVariables {
     
     static int a = 20;
     
-
-    
-
 public static int howToReference(int b){
     
     a = a * b;
