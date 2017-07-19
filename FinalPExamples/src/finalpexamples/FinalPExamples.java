@@ -30,6 +30,7 @@ public class FinalPExamples {
         the class that contains this static variable, such as
         ***********************************************************************/
         
+        
         Scanner keyboard = new Scanner(System.in);
         
         // 'a' is 20, but I didn't instantiated it
@@ -40,6 +41,14 @@ public class FinalPExamples {
         int result = StaticNonStaticVariables.howToReference(b);
         System.out.println("After the calculation, a is " + 
                 StaticNonStaticVariables.a);
+        
+        
+        
+        StaticNonStaticVariables.referenceStaticFunction();
+      //StaticNonStaticVariables.referenceNonStaticFunction();
+        
+        StaticNonStaticVariables example = new StaticNonStaticVariables();
+        example.referenceNonStaticFunction();
         
         
         /*Arrays, ArrayList, Enum
