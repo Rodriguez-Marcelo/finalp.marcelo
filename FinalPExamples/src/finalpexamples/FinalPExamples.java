@@ -34,7 +34,13 @@ public class FinalPExamples {
         Scanner keyboard = new Scanner(System.in);
         
         // 'a' is 20, but I didn't instantiated it
-        int b = keyboard.nextInt();
+        
+        
+        //System.out.println(StaticNonStaticVariables.b);
+        
+        
+        
+                int b = keyboard.nextInt();
         System.out.println("Before the calculation, a is " + 
                 StaticNonStaticVariables.a);
         // 'a' is the result of the multiplication
@@ -43,11 +49,17 @@ public class FinalPExamples {
                 StaticNonStaticVariables.a);
         
         
-        
+        // STATIC FUNCTION
         StaticNonStaticVariables.referenceStaticFunction();
-      //StaticNonStaticVariables.referenceNonStaticFunction();
+        System.out.println(StaticNonStaticVariables.a);
         
+        // NON STATIC FUNCTION & VARIABLE
+        //StaticNonStaticVariables.referenceNonStaticFunction();
+        //System.out.println(StaticNonStaticVariables.b);
+        
+        // INSTANTIATON OF CLASS ON THE EXAMPLE OBJECT
         StaticNonStaticVariables example = new StaticNonStaticVariables();
+        System.out.println(example.b);
         example.referenceNonStaticFunction();
         
         
